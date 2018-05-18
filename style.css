@@ -1,0 +1,135 @@
+:root {
+    --bg-light-color: #222326;
+    --bg-dark-color: #121212;
+    --white-color: #ffffff;
+    --playlist-subtext-color: #b7b7b7;
+    --tab-color: #adaeb3;
+    --player-subtext-color: #bdbdbd;
+    --bar-height: 56px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Product+Sans:100,300,400,500,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Product Sans',sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+#header {
+    height: var(--bar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light-color);
+}
+
+#content {
+    height: calc(100vh - calc(var(--bar-height)*3));
+    overflow-y: scroll;
+}
+
+#content .card {
+    text-align: center;
+}
+
+#content .card > p {
+    padding-top: 12px;
+}
+
+#content .card .swiper {
+    display: flex;
+    /* width: 100rem; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#content .card .swiper div {
+    /* border: 1px solid rebeccapurple; */
+    width: 150px;
+    height: 180px;
+    margin: 12px;
+}
+p.playlist-name {
+    font-size: 12px;
+    padding-top: 4px;
+}
+p.followers {
+    font-size: 10px;
+    padding-top: 4px;
+    color: var(--playlist-subtext-color);    
+}
+
+#content .card .swiper div img {
+    height: 140px;
+    width: 150px;
+}
+
+#player {
+    background-color: var(--bg-light-color);
+    height: var(--bar-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#player div {
+    display: flex;
+}
+
+#player .material-icons {
+    padding: 8px;
+    font-size: 28px;
+}
+
+#player .track-name {
+    font-weight: bold;
+}
+
+#player .track-artist {
+    color: var(--player-subtext-color);
+}
+
+.track-name:after {
+    content: "\25CF";
+    font-size: 6px;
+    vertical-align: middle;
+    color: var(--player-subtext-color);
+    margin: 6px;
+}
+
+#tabs {
+    background-color: var(--bg-light-color);
+    height: var(--bar-height);
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #121314;
+}
+
+#tabs .tab {
+    color: var(--tab-color);
+    padding: 4px;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+#tabs .tab.active {
+    color: var(--white-color);
+}

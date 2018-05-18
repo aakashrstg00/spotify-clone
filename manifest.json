@@ -1,0 +1,49 @@
+{
+    "name": "Spotify Clone",
+    "short_name": "Spotify Clone",
+    "start_url": "/index.html",
+    "description": "A simple Spotify clone.",
+    "scope": ".",
+    "display": "fullscreen",
+    "background_color": "#666",
+    "theme_color": "#3fb54e",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "icons": [{
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "48X48"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "96X96"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "144X144"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "192X192"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "384X384"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "256X256"
+        },
+        {
+            "src": "/Spotify.png",
+            "type": "image/png",
+            "sizes": "512X512"
+        }
+    ]
+}

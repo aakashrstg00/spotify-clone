@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <div id="header">
+        <p>Home</p>
+    </div>
+    <div id="content">
+        <div class="card">
+            <p>Pop</p>
+            <div class="swiper">
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Everyday Favourites</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Teen Party</p>
+                    <p class="followers">1,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-icon.png" alt="">
+                    <p class="playlist-name">Soft Pop Hits</p>
+                    <p class="followers">2,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Singled Out</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Pop</p>
+            <div class="swiper">
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Everyday Favourites</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Teen Party</p>
+                    <p class="followers">1,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-icon.png" alt="">
+                    <p class="playlist-name">Soft Pop Hits</p>
+                    <p class="followers">2,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Singled Out</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <p>Pop</p>
+            <div class="swiper">
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Everyday Favourites</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Teen Party</p>
+                    <p class="followers">1,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-icon.png" alt="">
+                    <p class="playlist-name">Soft Pop Hits</p>
+                    <p class="followers">2,121,212 FOLLOWERS</p>
+                </div>
+                <div>
+                    <img src="./playlist-cover.png" alt="">
+                    <p class="playlist-name">Singled Out</p>
+                    <p class="followers">121,212 FOLLOWERS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="player">
+        <div class="up">
+            <i class="material-icons">keyboard_arrow_up</i>
+        </div>
+        <div class="track-details">
+            <p class="track-name">Pulse</p>
+            <p class="track-artist">Toby Green</p>
+        </div>
+        <div class="player-controls">
+            <i class="material-icons">play_circle_outline</i>
+            <i class="material-icons">skip_next</i>
+        </div>
+    </div>
+    <div id="tabs">
+        <div class="tab active">
+            <i class="material-icons">home</i>
+            <p>Home</p>
+        </div>
+        <div class="tab">
+            <i class="material-icons">shop_two</i>
+            <p>Browse</p>
+        </div>
+        <div class="tab">
+            <i class="material-icons">search</i>
+            <p>Search</p>
+        </div>
+        <div class="tab">
+            <i class="material-icons">wifi_tethering</i>
+            <p>Radio</p>
+        </div>
+        <div class="tab">
+            <i class="material-icons">library_books</i>
+            <p>Your Library</p>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            console.log('SW exists');
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(function () {
+                    console.log('Service worker registered!');
+                })
+                .catch(function (err) {
+                    console.log(err);
+                });
+        }
+    </script>
+</body>
+
+</html>
